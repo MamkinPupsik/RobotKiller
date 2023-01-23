@@ -52,7 +52,7 @@ public class EnemyBehavior : MonoBehaviour
         locationIndex = (locationIndex + 1) % location.Count;
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if(other.name == "Player")
         {
