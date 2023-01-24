@@ -1,20 +1,28 @@
 Name: RobotKiller
 3D, FPS
 
-I) Механика движения
-	1) Перемещение игрока (лево, право, назад, вперед) [+]
-	2) Прыжок [+]
-	3) Движения камерой во все стороны [+]
-	4) Ускорение [+]
+I) Mechanics of motion
+ 	1) Move the player (left, right, back, forward) [+]
+ 	2) Jump [+]
+ 	3) Camera movements in all directions [+]
+ 	4) Acceleration [+]
 
-II) Механика врага
-	1) перемещение по локации [+]
-	2) Метод Охота за игроком [+]
-III) Сражения и так далее
-	1) Урон от врага [-+]
-	2) Получение урона от игрока [+]
-	4) Лут с врагов [ ]
-	5) HPbar UI [ ]
-	6) Heal Item [ ]
-	7) Оружие врага [ ]
+II) Enemy Mechanics
+	 1) moving around the location [+]
+ 	 2) The method of Hunting for the player [+]
 
+III) Battles and so on
+	 1) Enemy damage [+-]
+	 2) Taking damage from the player [+]
+	 4) Loot with enemies [ ]
+	 5) HPbar enemy over the head [ ]
+	 6) Heal Item [ ]
+	 7) Enemy weapons [+-]
+
+IV) UI elements
+ 	1) Player HP [ ]
+ 	2) Endurance level [ ]
+ 	3) Number of rounds [ ]
+ 	4) Name [ ] 
+
+*** New improvements will come during the creation of the project ***
