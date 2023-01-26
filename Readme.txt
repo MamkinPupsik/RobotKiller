@@ -18,9 +18,11 @@ III) Battles and so on
 	 5) HPbar enemy over the head [ ]
 	 6) Heal Item [ ]
 	 7) Enemy weapons [+-]
+	 8) Окно проигрыша [ ]
+	 9) Окно победы [ ]
 
 IV) UI elements
- 	1) Player HP [ ]
+ 	1) Player HP [+]
  	2) Endurance level [ ]
  	3) Number of rounds [ ]
  	4) Name [ ] 
