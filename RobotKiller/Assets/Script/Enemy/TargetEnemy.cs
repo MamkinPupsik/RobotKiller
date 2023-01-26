@@ -4,6 +4,7 @@ public class TargetEnemy : MonoBehaviour
 {
     public float health = 50f;
     public int EnemyDieChecked = 0;
+    public GameObject health_item;
 
     public void TakeDamage(float amount)
     {
@@ -18,6 +19,7 @@ public class TargetEnemy : MonoBehaviour
     void Die()
     {      
         Destroy(gameObject);
+        Instantiate(health_item, this.transform.position, Quaternion.identity);
     }
 }
 

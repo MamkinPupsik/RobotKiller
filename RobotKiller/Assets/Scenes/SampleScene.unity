@@ -1418,6 +1418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   EnemyDieChecked: 0
+  health_item: {fileID: 1803122941}
 --- !u!1 &659384512
 GameObject:
   m_ObjectHideFlags: 0
@@ -3232,6 +3233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad66a25e6bacdd46861433beab29a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraMove: 1
   sensitivityMouse: 2
   Player: {fileID: 1265044653}
 --- !u!1 &974994651
@@ -4338,6 +4340,7 @@ MonoBehaviour:
   labelText: Killed 1 enemy to Win!
   healthPlayer: 0
   EnemyKilled: 0
+  targetplayer: {fileID: 0}
 --- !u!136 &1265044650
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6146,6 +6149,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783653617}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1803122941 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3334416956762445022, guid: 4166c0c5bd1110d4ea76341d64736006, type: 3}
+  m_PrefabInstance: {fileID: 3334416957327633732}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1857910650
 GameObject:
   m_ObjectHideFlags: 0

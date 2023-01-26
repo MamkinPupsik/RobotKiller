@@ -7,6 +7,8 @@ public class CameraControl : MonoBehaviour
     private float mouseX;
     private float mouseY;
 
+    public bool CameraMove = true;
+
     float xRotation = 0f;
 
     [Header("Чувствительность мыши")]
@@ -22,14 +24,18 @@ public class CameraControl : MonoBehaviour
 
     void Update()
     {
-        mouseX = Input.GetAxis("Mouse X") * sensitivityMouse;
-        mouseY = Input.GetAxis("Mouse Y") * sensitivityMouse;
+        if (CameraMove)
+        {
+            mouseX = Input.GetAxis("Mouse X") * sensitivityMouse;
+            mouseY = Input.GetAxis("Mouse Y") * sensitivityMouse;
 
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -60f, 60f);
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        transform.Rotate(-mouseY * new Vector3(1, 0, 0) * Time.deltaTime);
+            xRotation -= mouseY;
+            xRotation = Mathf.Clamp(xRotation, -60f, 60f);
+            transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            transform.Rotate(-mouseY * new Vector3(1, 0, 0) * Time.deltaTime);
 
-        Player.Rotate(mouseX * new Vector3(0, 1, 0));
+            Player.Rotate(mouseX * new Vector3(0, 1, 0));
+        }
+       
     }
 }

@@ -26,10 +26,7 @@ public class Player : MonoBehaviour
 
     public int EnemyKilled;
 
-    TargetPlayer targetplayer;
-    TargetEnemy targetenemy;
-
-
+    public TargetPlayer targetplayer;
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
@@ -42,7 +39,6 @@ public class Player : MonoBehaviour
         targetplayer = GetComponent<TargetPlayer>();
 
         healthPlayer = targetplayer.PlayerHealth;
-        CheckedLose();
     }
     void FixedUpdate()
     {
@@ -75,14 +71,6 @@ public class Player : MonoBehaviour
         }
 
        
-    }
-
-    void CheckedLose()
-    {
-        if (healthPlayer < 0)
-        {
-            labelText = "You die!";
-        }
     }
 
      void OnGUI()

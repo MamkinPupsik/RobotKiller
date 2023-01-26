@@ -58,11 +58,11 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Player\Player.cs" />
     <Compile Include="Assets\Script\Player\CameraControl.cs" />
+    <Compile Include="Assets\Script\HealthItem.cs" />
     <Compile Include="Assets\Script\Enemy\TargetEnemy.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyBehavior.cs" />
     <Compile Include="Assets\Script\Player\ShotToGun.cs" />
     <Compile Include="Assets\Script\Player\TargetPlayer.cs" />
-    <Compile Include="Assets\Script\HealthItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
