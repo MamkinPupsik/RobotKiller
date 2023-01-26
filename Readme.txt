@@ -18,8 +18,8 @@ III) Battles and so on
 	 5) HPbar enemy over the head [ ]
 	 6) Heal Item [ ]
 	 7) Enemy weapons [+-]
-	 8) Окно проигрыша [ ]
-	 9) Окно победы [ ]
+	 8) Window loose [ ]
+	 9) Window win [ ]
 
 IV) UI elements
  	1) Player HP [+]
