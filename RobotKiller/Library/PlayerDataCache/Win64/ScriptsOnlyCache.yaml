@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - Player
     - ShotToGun
     - TargetEnemy
+    - TargetPlayer
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -70,6 +71,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3692}
     - Class: 114
       Script: {instanceID: 3802}
+    - Class: 114
+      Script: {instanceID: 4438}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -169,7 +172,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 2635e8791fd2c259283f9641faf01d95
+      Hash: a5a6529e19963c3fbb5e490c632f8b7f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -403,7 +406,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: c4e17c1f6352497cc7f8ce6fe59ea046
+      Hash: 34e663cc8b723c12f8f8a34780e53806
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TargetEnemy
@@ -545,7 +548,13 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: ec478e0b0a6738c15fa55943fce7fb25
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TargetPlayer
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/admins/MyProject/Checnya.exe
+  playerPath: C:/Users/admins/MyProject/RobotKiller 0.3a/Checnya.exe
