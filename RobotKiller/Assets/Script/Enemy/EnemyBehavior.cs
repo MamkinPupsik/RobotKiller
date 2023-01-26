@@ -69,7 +69,7 @@ public class EnemyBehavior : MonoBehaviour
         agent.destination = player.position;
         if (Time.time >= nextTimeToFire)
         {
-            nextTimeToFire = Time.time + 3f / fireRate;
+            nextTimeToFire = Time.time + 1f / fireRate;
             ShootingAtPlayer();
         }
         
@@ -79,13 +79,16 @@ public class EnemyBehavior : MonoBehaviour
     void ShootingAtPlayer()
     {
         RaycastHit EnHit;
-
-
-                if (Physics.Raycast(EnemyGun.transform.position,
-                EnemyGun.transform.forward, out EnHit, EnemyRange))
-                {
-                Debug.Log("Enemy" + EnHit.transform.name);
-                }
+        if (Physics.Raycast(EnemyGun.transform.position,
+        EnemyGun.transform.forward, out EnHit, EnemyRange))
+        {
+        TargetPlayer targetplayer = EnHit.transform.GetComponent<TargetPlayer>();
+        if(targetplayer != null)
+        {
+            targetplayer.PlayerDamage(EnemyDamage);
+            Debug.Log("his!");
+        }
+        }
                 
     }
 }

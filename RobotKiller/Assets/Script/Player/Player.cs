@@ -20,7 +20,16 @@ public class Player : MonoBehaviour
     public float jumpVelocity = 2f;
 
     private Rigidbody _rb;
-   
+
+    public string labelText = "Killed 1 enemy to Win!";
+    public float healthPlayer;
+
+    public int EnemyKilled;
+
+    TargetPlayer targetplayer;
+    TargetEnemy targetenemy;
+
+
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
@@ -28,8 +37,12 @@ public class Player : MonoBehaviour
 
     void Update()
     {   //Speed boost character 
-        
         Move();
+
+        targetplayer = GetComponent<TargetPlayer>();
+
+        healthPlayer = targetplayer.PlayerHealth;
+        CheckedLose();
     }
     void FixedUpdate()
     {
@@ -63,6 +76,23 @@ public class Player : MonoBehaviour
 
        
     }
+
+    void CheckedLose()
+    {
+        if (healthPlayer < 0)
+        {
+            labelText = "You die!";
+        }
+    }
+
+     void OnGUI()
+    {
+        GUI.Box(new Rect(20, 20, 150, 25), "Player health: " + healthPlayer);
+        GUI.Box(new Rect(20, 50, 150, 25), "Enemy killed: " + EnemyKilled);
+        GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 50, 300, 50), labelText);
+    }
+
+
 
 
     private void OnCollisionEnter(Collision collision)
