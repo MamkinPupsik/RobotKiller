@@ -15,7 +15,7 @@ III) Battles and so on
 	 1) Enemy damage [+]
 	 2) Taking damage from the player [+]
 	 4) Loot with enemies [+]
-	 5) HPbar enemy over the head [ ]
+	 5) HPbar enemy over the head [-+] Доделать https://www.youtube.com/watch?v=4g_wLVErPXM 
 	 6) Heal Item [+]
 	 7) Enemy weapons [+]
 	 8) Window loose []
