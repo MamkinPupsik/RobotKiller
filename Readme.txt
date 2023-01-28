@@ -21,7 +21,7 @@ III) Battles and so on
 	 6) Heal Item [+]
 	 7) Enemy weapons [+]
 	 8) Window loose [] - player dead
-	 9) Window win []
+	 9) Window win [+] - kill any enemy
 
 IV) UI elements
  	1) Player HP [+]
