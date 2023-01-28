@@ -1,6 +1,8 @@
 Name: RobotKiller
 3D, FPS
 
+Game Version: 0.* alfa
+
 I) Mechanics of motion
  	1) Move the player (left, right, back, forward) [+]
  	2) Jump [+]
