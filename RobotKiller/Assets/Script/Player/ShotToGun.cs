@@ -17,7 +17,7 @@ public class ShotToGun : MonoBehaviour
     {
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
         {
-            nextTimeToFire = Time.time + 11f / fireRate;
+            nextTimeToFire = Time.time + 3f / fireRate;
             Shoot();
             
         }    
@@ -25,29 +25,23 @@ public class ShotToGun : MonoBehaviour
 
     void Shoot()
     {
-        for (int i = 0; i < 10000; i++)
+        
+        muzzleFlash.Play();
+        RaycastHit hit;
+        if (Physics.Raycast(fpsCam.transform.position,
+        fpsCam.transform.forward, out hit, range))
         {
-            if (i == 9999)
+            Debug.Log(hit.transform.name);
+            TargetEnemy targetenemy = hit.transform.GetComponent<TargetEnemy>();
+            if (targetenemy != null)
             {
-                muzzleFlash.Play();
-                RaycastHit hit;
-                if (Physics.Raycast(fpsCam.transform.position,
-                     fpsCam.transform.forward, out hit, range))
-                {
-                    Debug.Log(hit.transform.name);
-
-                    TargetEnemy targetenemy = hit.transform.GetComponent<TargetEnemy>();
-
-                    if (targetenemy != null)
-                    {
-                        targetenemy.TakeDamage(damage);
-                    }
-
-                    // Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-                }
+                targetenemy.TakeDamage(damage);
             }
-            
         }
+                    // Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+           
+            
+        
      
         
     }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -23,9 +21,6 @@ public class Player : MonoBehaviour
 
     public string labelText = "Killed 1 enemy to Win!";
     public float healthPlayer;
-
-    public int EnemyKilled;
-
     public TargetPlayer targetplayer;
     void Start()
     {
@@ -76,7 +71,7 @@ public class Player : MonoBehaviour
      void OnGUI()
     {
         GUI.Box(new Rect(20, 20, 150, 25), "Player health: " + healthPlayer);
-        GUI.Box(new Rect(20, 50, 150, 25), "Enemy killed: " + EnemyKilled);
+        
         GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 50, 300, 50), labelText);
     }
 

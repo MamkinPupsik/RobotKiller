@@ -6,9 +6,8 @@ public class TargetEnemy : MonoBehaviour
     public float health = 100f;
     public int EnemyDieChecked = 0;
     public GameObject health_item;
-
-    public int HP;
     private Slider hpstat;
+    public DieCheckerEnemy dieCheckerEnemy;
 
     public void TakeDamage(float amount)
     {
@@ -17,14 +16,14 @@ public class TargetEnemy : MonoBehaviour
         health -= amount;
         if(health < 0)
         {
-            EnemyDieChecked += 1;
+            dieCheckerEnemy.EnemyKilledChecker =  EnemyDieChecked += 1;
             Die();
         }
     }
 
     void Die()
     {      
-        Destroy(gameObject);
+        Destroy(this.gameObject);
         Instantiate(health_item, this.transform.position, Quaternion.identity);
     }
 }

@@ -58,12 +58,14 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Player\Player.cs" />
     <Compile Include="Assets\Script\Player\CameraControl.cs" />
-    <Compile Include="Assets\Script\HealthItem.cs" />
+    <Compile Include="Assets\Script\BaffScript\HealthItem.cs" />
+    <Compile Include="Assets\Script\Enemy\HPbarEnemy.cs" />
     <Compile Include="Assets\Script\Enemy\TargetEnemy.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyBehavior.cs" />
     <Compile Include="Assets\Script\Player\ShotToGun.cs" />
     <Compile Include="Assets\Script\Player\TargetPlayer.cs" />
-    <Compile Include="Assets\Script\Enemy\HPbarEnemy.cs" />
+    <Compile Include="Assets\Script\Player\WindowWinLoose.cs" />
+    <Compile Include="Assets\Script\Enemy\DieCheckerEnemy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
