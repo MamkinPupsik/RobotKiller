@@ -11,6 +11,6 @@ public class HPbarEnemy : MonoBehaviour
     {
         hpstat = transform.Find("Canvas/Panel/Slider").gameObject.GetComponent<Slider>();
         hpvalue = GameObject.Find("Enemy").GetComponent<TargetEnemy>();
-        hpvalue.health = hpstat.value;
+        hpstat.value = hpvalue.health;
     }
 }
