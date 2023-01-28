@@ -18,7 +18,7 @@ III) Battles and so on
 	 5) HPbar enemy over the head [-+] Доделать https://www.youtube.com/watch?v=4g_wLVErPXM 
 	 6) Heal Item [+]
 	 7) Enemy weapons [+]
-	 8) Window loose []
+	 8) Window loose [] - player dead
 	 9) Window win []
 
 IV) UI elements
