@@ -19,6 +19,9 @@ public class EnemyBehavior : MonoBehaviour
     public float fireRate = 15f;
     private float nextTimeToFire = 0f;
 
+  
+    public float playerhealth;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -58,37 +61,44 @@ public class EnemyBehavior : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
+
         if(other.name == "Player")
         {
-            Hunted();   
+            TargetPlayer targetplayer = GameObject.Find("Player").GetComponent<TargetPlayer>();
+            agent.destination = player.position;
+            targetplayer.PlayerHealth -= 1;
+           // Hunted();   
         }
     }
 
-    void Hunted() 
-    {
-        agent.destination = player.position;
-        if (Time.time >= nextTimeToFire)
-        {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            ShootingAtPlayer();
-        }
+   // void Hunted() 
+    
+   //     agent.destination = player.position;
+   //     if (Time.time >= nextTimeToFire)
+   //     {
+   //         nextTimeToFire = Time.time + 1f / fireRate;
+   //        // ShootingAtPlayer();
+   //     }
         
 
-    }
+   // }
 
-    void ShootingAtPlayer()
-    {
-        RaycastHit EnHit;
-        if (Physics.Raycast(EnemyGun.transform.position,
-        EnemyGun.transform.forward, out EnHit, EnemyRange))
-        {
-        TargetPlayer targetplayer = EnHit.transform.GetComponent<TargetPlayer>();
-        if(targetplayer != null)
-        {
-            targetplayer.PlayerDamage(EnemyDamage);
-            Debug.Log("his!");
-        }
-        }
+   //// void ShootingAtPlayer()
+   // {
+   //     RaycastHit EnHit;
+   //     if (Physics.Raycast(EnemyGun.transform.position,
+   //     EnemyGun.transform.forward, out EnHit, EnemyRange))
+   //     {
+   //     TargetPlayer targetplayer = EnHit.transform.GetComponent<TargetPlayer>();
+   //     if(targetplayer != null)
+   //     {
+   //         targetplayer.PlayerDamage(EnemyDamage);
+   //         Debug.Log("his!");
+   //     }
+   //     }
                 
+    void PlayerDamagers()
+    {
+
     }
 }

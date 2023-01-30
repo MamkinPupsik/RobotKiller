@@ -2,19 +2,31 @@ using UnityEngine;
 
 public class TargetPlayer : MonoBehaviour
 {
-    public float PlayerHealth = 1000f;
+    public float PlayerHealth = 100f;
+    public bool HealthLoose = false;
 
-    public void PlayerDamage(float amount)
+    private void Update()
     {
-        PlayerHealth -= amount;
-        if (PlayerHealth < 0)
+        if (PlayerHealth <= 0)
         {
-            Die();
+            WindowLoose();
         }
     }
 
-    void Die()
+    void WindowLoose()
     {
-        Destroy(this.gameObject);
+        HealthLoose = true;
+        Time.timeScale = 0f;
     }
+
+    private void OnGUI()
+    {
+        if (HealthLoose == true)
+        {
+            GUI.Box(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 50, 200, 100), "DIE!");
+        }
+        
+    }
+
+
 }
