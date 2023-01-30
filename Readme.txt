@@ -27,6 +27,6 @@ IV) UI elements
  	1) Player HP [+]
  	2) Endurance level [ ]
  	3) Number of rounds [ ]
- 	4) Name [ ] 
+ 	4) Name user [ ] 
 
 *** New improvements will come during the creation of the project ***
