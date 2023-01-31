@@ -16,7 +16,7 @@ public class TargetEnemy : MonoBehaviour
         health -= amount;
         if(health < 0)
         {
-            dieCheckerEnemy.EnemyKilledChecker =  EnemyDieChecked += 1;
+            dieCheckerEnemy.EnemyKilledChecker += 1;
             Die();
         }
     }

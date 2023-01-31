@@ -63,7 +63,9 @@
     <Compile Include="Assets\Script\Player\WindowWinLoose.cs" />
     <Compile Include="Assets\Script\Enemy\TargetEnemy.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyBehavior.cs" />
+    <Compile Include="Assets\Script\Player\Stamina.cs" />
     <Compile Include="Assets\Script\Player\ShotToGun.cs" />
+    <Compile Include="Assets\Script\BaffScript\StaminaItem.cs" />
     <Compile Include="Assets\Script\Enemy\DieCheckerEnemy.cs" />
     <Compile Include="Assets\Script\Player\TargetPlayer.cs" />
   </ItemGroup>

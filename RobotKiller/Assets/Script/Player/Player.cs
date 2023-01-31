@@ -8,12 +8,13 @@ public class Player : MonoBehaviour
     [Header("явл€емс€ ли мы на земле?")]
     public bool Ground;
 
-    private float _moveSpeed = 3f;
+    public float _moveSpeed = 3f;
     private float _LRSpeed = 3f;
 
-    private float vInput;
-    private float hInput;
-    private float xInput;
+    public float vInput;
+    public float xInput;
+
+    public bool Tired = false;
 
     public float jumpVelocity = 2f;
 
@@ -49,21 +50,33 @@ public class Player : MonoBehaviour
     
     void Move()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Tired == false)
         {
-            vInput = Input.GetAxis("Vertical") * _moveSpeed + 2f;
-            xInput = Input.GetAxis("Horizontal") * _LRSpeed;
-            this.transform.Translate(Vector3.forward * vInput * Time.deltaTime);
-            this.transform.Translate(Vector3.left * -xInput * Time.deltaTime);
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                vInput = Input.GetAxis("Vertical") * _moveSpeed + 2f;
+                xInput = Input.GetAxis("Horizontal") * _LRSpeed;
+                this.transform.Translate(Vector3.forward * vInput * Time.deltaTime);
+                this.transform.Translate(Vector3.left * -xInput * Time.deltaTime);
 
+            }
+            else if (!Input.GetKey(KeyCode.LeftShift))
+            {
+                vInput = Input.GetAxis("Vertical") * _moveSpeed;
+                xInput = Input.GetAxis("Horizontal") * _LRSpeed;
+                this.transform.Translate(Vector3.forward * vInput * Time.deltaTime);
+                this.transform.Translate(Vector3.left * -xInput * Time.deltaTime);
+            }
         }
-        else if (!Input.GetKey(KeyCode.LeftShift))
+        else if (Tired == true)
         {
             vInput = Input.GetAxis("Vertical") * _moveSpeed;
             xInput = Input.GetAxis("Horizontal") * _LRSpeed;
             this.transform.Translate(Vector3.forward * vInput * Time.deltaTime);
             this.transform.Translate(Vector3.left * -xInput * Time.deltaTime);
         }
+
+        
 
        
     }
