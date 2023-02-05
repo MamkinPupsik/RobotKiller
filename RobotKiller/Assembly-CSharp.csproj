@@ -57,15 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Player\Player.cs" />
-    <Compile Include="Assets\Script\Enemy\HPbarEnemy.cs" />
-    <Compile Include="Assets\Script\Player\WindowWinLoose.cs" />
-    <Compile Include="Assets\Script\Enemy\EnemyBehavior.cs" />
-    <Compile Include="Assets\Script\Player\Stamina.cs" />
-    <Compile Include="Assets\Script\BaffScript\StaminaItem.cs" />
     <Compile Include="Assets\Script\Player\CameraControl.cs" />
     <Compile Include="Assets\Script\BaffScript\HealthItem.cs" />
+    <Compile Include="Assets\Script\Enemy\HPbarEnemy.cs" />
+    <Compile Include="Assets\Script\Player\WindowWinLoose.cs" />
     <Compile Include="Assets\Script\Enemy\TargetEnemy.cs" />
+    <Compile Include="Assets\Script\Enemy\EnemyBehavior.cs" />
+    <Compile Include="Assets\Script\Player\Stamina.cs" />
     <Compile Include="Assets\Script\Player\ShotToGun.cs" />
+    <Compile Include="Assets\Script\BaffScript\StaminaItem.cs" />
     <Compile Include="Assets\Script\Enemy\DieCheckerEnemy.cs" />
     <Compile Include="Assets\Script\Player\TargetPlayer.cs" />
   </ItemGroup>
@@ -663,14 +663,26 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.44f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -701,18 +713,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>

@@ -8,7 +8,7 @@ public class DieCheckerEnemy : MonoBehaviour
 
     private void Update()
     {
-        if (EnemyKilledChecker >= 1)
+        if (EnemyKilledChecker >= 10)
         {
             WinWindow();
         }
