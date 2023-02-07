@@ -1,0 +1,4 @@
+repository "Checnya@DimiDavilCorp@cloud"
+  path "/"
+    br "/main"
+    co "/main"
