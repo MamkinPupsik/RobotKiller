@@ -68,6 +68,9 @@
     <Compile Include="Assets\Script\BaffScript\StaminaItem.cs" />
     <Compile Include="Assets\Script\Enemy\DieCheckerEnemy.cs" />
     <Compile Include="Assets\Script\Player\TargetPlayer.cs" />
+    <Compile Include="Assets\Script\MainMenu\StartGame.cs" />
+    <Compile Include="Assets\Script\MainMenu\StartSettings.cs" />
+    <Compile Include="Assets\Script\MainMenu\ExitGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
