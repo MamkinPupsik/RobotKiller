@@ -1,10 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartSettings : MonoBehaviour
 {
 
-    // При запуске на кнопку settings запускает настройки 
+    public void LoadSettingsWindow()
+    {
+        SceneManager.LoadScene("SettingsScenes");
+    }
 
 }
