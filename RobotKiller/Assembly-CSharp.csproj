@@ -70,9 +70,9 @@
     <Compile Include="Assets\Script\GameScenes\Player\ShotToGun.cs" />
     <Compile Include="Assets\Script\GameScenes\BaffScript\StaminaItem.cs" />
     <Compile Include="Assets\Script\MainMenu\StartSettings.cs" />
+    <Compile Include="Assets\Script\SettingsMenu\SettingsScript.cs" />
     <Compile Include="Assets\Script\GameScenes\Enemy\DieCheckerEnemy.cs" />
     <Compile Include="Assets\Script\GameScenes\Player\TargetPlayer.cs" />
-    <Compile Include="Assets\Script\SettingsMenu\SettingsScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
