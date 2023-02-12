@@ -360,6 +360,7 @@
 "Assets/Script/MainMenu/StartGame.cs"
 "Assets/Script/MainMenu/StartSettings.cs"
 "Assets/Script/SettingsMenu/BackToMainMenu.cs"
+"Assets/Script/SettingsMenu/SettingsScript.cs"
 -langversion:9.0
 
 /deterministic
