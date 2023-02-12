@@ -56,21 +56,21 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Player\Player.cs" />
-    <Compile Include="Assets\Script\Player\CameraControl.cs" />
-    <Compile Include="Assets\Script\BaffScript\HealthItem.cs" />
-    <Compile Include="Assets\Script\Enemy\HPbarEnemy.cs" />
-    <Compile Include="Assets\Script\Player\WindowWinLoose.cs" />
-    <Compile Include="Assets\Script\Enemy\TargetEnemy.cs" />
+    <Compile Include="Assets\Script\GameScenes\Player\Player.cs" />
+    <Compile Include="Assets\Script\GameScenes\Player\CameraControl.cs" />
+    <Compile Include="Assets\Script\GameScenes\BaffScript\HealthItem.cs" />
+    <Compile Include="Assets\Script\GameScenes\Enemy\HPbarEnemy.cs" />
+    <Compile Include="Assets\Script\GameScenes\Player\WindowWinLoose.cs" />
+    <Compile Include="Assets\Script\GameScenes\Enemy\TargetEnemy.cs" />
     <Compile Include="Assets\Script\MainMenu\StartGame.cs" />
-    <Compile Include="Assets\Script\Enemy\EnemyBehavior.cs" />
-    <Compile Include="Assets\Script\Player\Stamina.cs" />
+    <Compile Include="Assets\Script\GameScenes\Enemy\EnemyBehavior.cs" />
+    <Compile Include="Assets\Script\GameScenes\Player\Stamina.cs" />
     <Compile Include="Assets\Script\MainMenu\ExitGame.cs" />
-    <Compile Include="Assets\Script\Player\ShotToGun.cs" />
-    <Compile Include="Assets\Script\BaffScript\StaminaItem.cs" />
+    <Compile Include="Assets\Script\GameScenes\Player\ShotToGun.cs" />
+    <Compile Include="Assets\Script\GameScenes\BaffScript\StaminaItem.cs" />
     <Compile Include="Assets\Script\MainMenu\StartSettings.cs" />
-    <Compile Include="Assets\Script\Enemy\DieCheckerEnemy.cs" />
-    <Compile Include="Assets\Script\Player\TargetPlayer.cs" />
+    <Compile Include="Assets\Script\GameScenes\Enemy\DieCheckerEnemy.cs" />
+    <Compile Include="Assets\Script\GameScenes\Player\TargetPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
