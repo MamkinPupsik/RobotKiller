@@ -28,7 +28,7 @@ public class EnemyBehavior : MonoBehaviour
 
         player = GameObject.Find("Player").transform;
 
-        InitializePatrolRoute();
+    //    InitializePatrolRoute();
 
         MoveToNextPatrolLocation();
     }
@@ -41,13 +41,13 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-    void InitializePatrolRoute()
-    {
-        foreach(Transform child in patrolRoute)
-        {
-            location.Add(child);
-        }
-    }
+   // void InitializePatrolRoute()
+   // {
+   //     foreach(Transform child in patrolRoute)
+   //     {
+   //         location.Add(child);
+   //     }
+   // }
 
     void MoveToNextPatrolLocation()
     {
