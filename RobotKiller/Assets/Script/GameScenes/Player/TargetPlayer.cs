@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TargetPlayer : MonoBehaviour
 {
+    public GameObject _crosshair;
     public float PlayerHealth = 100f;
     public bool HealthLoose = false;
 
@@ -9,24 +11,8 @@ public class TargetPlayer : MonoBehaviour
     {
         if (PlayerHealth <= 0)
         {
-            WindowLoose();
+            _crosshair.SetActive(false);
+            SceneManager.LoadScene("DeathScene");
         }
     }
-
-    void WindowLoose()
-    {
-        HealthLoose = true;
-        Time.timeScale = 0f;
-    }
-
-    private void OnGUI()
-    {
-        if (HealthLoose == true)
-        {
-            GUI.Box(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 50, 200, 100), "DIE!");
-        }
-        
-    }
-
-
 }

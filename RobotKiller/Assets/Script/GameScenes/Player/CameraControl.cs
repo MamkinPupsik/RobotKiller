@@ -14,6 +14,8 @@ public class CameraControl : MonoBehaviour
     [Header("Чувствительность мыши")]
     public float sensitivityMouse = 2f;
 
+    public GameObject ScreenDeath;
+
     [Header("Наш игрок")]
     public Transform Player;
 
@@ -35,6 +37,9 @@ public class CameraControl : MonoBehaviour
             transform.Rotate(-mouseY * new Vector3(1, 0, 0) * Time.deltaTime);
 
             Player.Rotate(mouseX * new Vector3(0, 1, 0));
+        }
+        else if (!CameraMove)
+        {
         }
        
     }
