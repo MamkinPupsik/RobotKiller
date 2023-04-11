@@ -61,6 +61,8 @@
     <Compile Include="Assets\Script\GameScenes\Enemy\RocketRobot\EnemyRotate.cs" />
     <Compile Include="Assets\Script\GameScenes\Player\CameraControl.cs" />
     <Compile Include="Assets\Script\GameScenes\BaffScript\HealthItem.cs" />
+    <Compile Include="Assets\Script\DeathScene\TextDeathAnim.cs" />
+    <Compile Include="Assets\Script\DeathScene\Buttons.cs" />
     <Compile Include="Assets\Script\GameScenes\Enemy\RocketRobot\Bullet.cs" />
     <Compile Include="Assets\Script\GameScenes\Enemy\HPbarEnemy.cs" />
     <Compile Include="Assets\Script\GameScenes\Player\WindowWinLoose.cs" />
@@ -77,8 +79,6 @@
     <Compile Include="Assets\Script\SettingsMenu\SettingsScript.cs" />
     <Compile Include="Assets\Script\GameScenes\Enemy\DieCheckerEnemy.cs" />
     <Compile Include="Assets\Script\GameScenes\Player\TargetPlayer.cs" />
-    <Compile Include="Assets\Script\DeathScene\TextDeathAnim.cs" />
-    <Compile Include="Assets\Script\DeathScene\Buttons.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
